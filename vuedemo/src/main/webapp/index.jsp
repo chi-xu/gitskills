@@ -35,19 +35,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="bootstrap-3.3.7/js/bootstrap.js"></script>
 <script>
 	$(function(){
-		$('#btn').click(function(){
-			var username = $('#username').val();
-			var password = $('#password').val();
-			
-			 $.getJSON('log/login',{'username':username,'password':password},function(data){
-				if(data.flag === '0'){ //成功
-					location.href= 'success.jsp';
-				}else{//失败
-					//$('#error').html('用户名或密码错误')
-					alert("用户名或密码错误");
-				}
-			})			
-		})			
-	}) 
+        $('#btn').click(function(){
+            var username = $('#username').val()
+            var password = $('#password').val()
+            $.getJSON('log/login',{'username':username,'password':password},function(data){
+                if(data === 0){ //成功
+                   
+                    alert("成功")
+                }else{
+                    var show = '';
+                    if(data === 1)
+                       
+                        alert("用户名错误")
+                    else
+                        
+                        alert("密码错误")
+                    
+                }
+            })
+        })
+    })
 </script>
 </html>

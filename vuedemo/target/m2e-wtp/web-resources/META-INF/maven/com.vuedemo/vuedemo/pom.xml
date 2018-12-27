@@ -101,7 +101,7 @@
 		</dependency>
 		
 		<!-- hibernate validator -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>4.3.1.Final</version>
@@ -111,7 +111,7 @@
     		<groupId>javax.validation</groupId>
     		<artifactId>validation-api</artifactId>
     		<version>1.0.0.GA</version>
-		</dependency>
+		</dependency> -->
 
 		
          <!-- 映入JSON -->
@@ -145,10 +145,16 @@
 		</dependency>
 		
 		<!-- mybatis物理分页插件 -->
-		<dependency> 
+		<!-- <dependency> 
 			<groupId>com.github.miemiedev</groupId> 
 			<artifactId>mybatis-paginator</artifactId> 
 			<version>1.2.15</version> 
+		</dependency> -->
+		
+		<dependency>
+		    <groupId>com.github.pagehelper</groupId>
+		    <artifactId>pagehelper</artifactId>
+		    <version>5.0.0</version>
 		</dependency>
 		
 		<!-- 导入javee包 -->
