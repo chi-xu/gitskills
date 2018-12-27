@@ -19,7 +19,12 @@ public class MenuTree {
         return trees;
     }
 
-   
+   /**
+    * 
+    * @param menu
+    * @param menus
+    * @return
+    */
     public static Menu findChildren(Menu menu,List<Menu> menus) {
         menu.setChildren(new ArrayList<Menu>());
         for (Menu it : menus) {
